@@ -1,0 +1,49 @@
+body {
+    /*background-color: white;*/
+    background-image: url("prettyRain.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: 50;
+}
+h1 {
+    color: lightgrey;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+h4 {
+    color: lightgrey;
+}
+
+p {
+    color: lightgrey;
+    margin: 10px;
+}
+
+#WelcomeMessage   {
+    text-align: center;
+}
+
+#intro {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+}
+
+#date {
+    text-align: center;
+}
+
+button{
+    text-align: center;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(100,100,100,1);
+    border-radius: 20%;
+    padding: 10px 20px;
+    opacity: 0.5;
+}
+
+
+.button:hover {
+    background-color: black;
+    color: black;
+}
