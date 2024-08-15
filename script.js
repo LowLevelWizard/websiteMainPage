@@ -1,3 +1,5 @@
+var incomingName
+
 function revealLinkedIn(){
     if(document.getElementById("linkedIn").style.display === 'none'){
         document.getElementById("linkedIn").style.display = 'block';
@@ -30,7 +32,22 @@ function revealBlog(){
     }
 }
 
+function talkToUser(){
+    if(document.getElementById("talk").style.display === 'none'){
+        incomingName = prompt("What's your name? ");
+        document.getElementById("talk").style.display = 'block';
+        document.getElementById("talk").innerHTML = "<p> Hello "+incomingName+" </p>";
+    }else{
+        document.getElementById("talk").style.display = 'none'
+    }
+}
+
+
 function showDate(){
     let date = new Date();
     document.getElementById("date").innerHTML = date;
+}
+
+function Greet(who){
+    alert('Greetings '+who);
 }
