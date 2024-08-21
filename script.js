@@ -35,13 +35,22 @@ function revealBlog(){
 function talkToUser(){
     if(document.getElementById("talk").style.display === 'none'){
         incomingName = prompt("What's your name? ");
+        if(incomingName === null || incomingName === ""){
+            document.getElementById("talk").innerHTML = "<p> Good day to you, Sir! </p>";
+        }else{
+            document.getElementById("talk").innerHTML = "<p> Hello "+incomingName+" </p>";
+        }
+
         document.getElementById("talk").style.display = 'block';
-        document.getElementById("talk").innerHTML = "<p> Hello "+incomingName+" </p>";
+
     }else{
         document.getElementById("talk").style.display = 'none'
     }
 }
 
+function makeWindow(){
+    NewWin = window.open('','NewWin','toolbare=no,status=no,width=200,height=100')
+}
 
 function showDate(){
     let date = new Date();
